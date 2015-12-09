@@ -1,0 +1,110 @@
+﻿Build started 12/9/2015 11:07:41 AM.
+     1>Project "C:\Users\stud2014\Documents\Lahtachev\mp2-lab3-lists-stack\sln\lab3_postfix\sample_List\sample_List.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Touching "Debug\sample_List.unsuccessfulbuild".
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I../../../include /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\..\samples\sample.cpp
+         sample.cpp
+     1>c:\users\stud2014\documents\lahtachev\mp2-lab3-lists-stack\include\list.h(34): error C2955: 'List' : use of class template requires template argument list
+                 c:\users\stud2014\documents\lahtachev\mp2-lab3-lists-stack\include\list.h(13) : see declaration of 'List'
+     1>c:\users\stud2014\documents\lahtachev\mp2-lab3-lists-stack\include\list.h(37): error C2244: 'List<ValType>::List' : unable to match function definition to an existing declaration
+                 c:\users\stud2014\documents\lahtachev\mp2-lab3-lists-stack\include\list.h(17) : see declaration of 'List<ValType>::List'
+                 definition
+                 'List::List(void)'
+                 existing declarations
+                 'List<ValType>::List(void)'
+     1>c:\users\stud2014\documents\lahtachev\mp2-lab3-lists-stack\include\list.h(51): error C2244: 'List<ValType>::find' : unable to match function definition to an existing declaration
+                 c:\users\stud2014\documents\lahtachev\mp2-lab3-lists-stack\include\list.h(19) : see declaration of 'List<ValType>::find'
+                 definition
+                 'NODE<ValType> *List::find(ValType)'
+                 existing declarations
+                 'NODE<ValType> *List<ValType>::find(ValType)'
+     1>c:\users\stud2014\documents\lahtachev\mp2-lab3-lists-stack\include\list.h(65): error C2244: 'List<ValType>::findP' : unable to match function definition to an existing declaration
+                 c:\users\stud2014\documents\lahtachev\mp2-lab3-lists-stack\include\list.h(20) : see declaration of 'List<ValType>::findP'
+                 definition
+                 'NODE<ValType> *List::findP(ValType)'
+                 existing declarations
+                 'NODE<ValType> *List<ValType>::findP(ValType)'
+     1>c:\users\stud2014\documents\lahtachev\mp2-lab3-lists-stack\include\list.h(73): error C2244: 'List<ValType>::insertF' : unable to match function definition to an existing declaration
+                 c:\users\stud2014\documents\lahtachev\mp2-lab3-lists-stack\include\list.h(22) : see declaration of 'List<ValType>::insertF'
+                 definition
+                 'void List::insertF(ValType)'
+                 existing declarations
+                 'void List<ValType>::insertF(ValType)'
+     1>c:\users\stud2014\documents\lahtachev\mp2-lab3-lists-stack\include\list.h(84): error C2244: 'List<ValType>::insertL' : unable to match function definition to an existing declaration
+                 c:\users\stud2014\documents\lahtachev\mp2-lab3-lists-stack\include\list.h(23) : see declaration of 'List<ValType>::insertL'
+                 definition
+                 'void List::insertL(ValType)'
+                 existing declarations
+                 'void List<ValType>::insertL(ValType)'
+     1>c:\users\stud2014\documents\lahtachev\mp2-lab3-lists-stack\include\list.h(98): error C2244: 'List<ValType>::insertB' : unable to match function definition to an existing declaration
+                 c:\users\stud2014\documents\lahtachev\mp2-lab3-lists-stack\include\list.h(24) : see declaration of 'List<ValType>::insertB'
+                 definition
+                 'void List::insertB(ValType,NODE<ValType> *)'
+                 existing declarations
+                 'void List<ValType>::insertB(ValType,NODE<ValType> *)'
+     1>c:\users\stud2014\documents\lahtachev\mp2-lab3-lists-stack\include\list.h(107): error C2244: 'List<ValType>::insertA' : unable to match function definition to an existing declaration
+                 c:\users\stud2014\documents\lahtachev\mp2-lab3-lists-stack\include\list.h(25) : see declaration of 'List<ValType>::insertA'
+                 definition
+                 'void List::insertA(ValType,NODE<ValType> *)'
+                 existing declarations
+                 'void List<ValType>::insertA(ValType,NODE<ValType> *)'
+     1>c:\users\stud2014\documents\lahtachev\mp2-lab3-lists-stack\include\list.h(125): error C2244: 'List<ValType>::erase' : unable to match function definition to an existing declaration
+                 c:\users\stud2014\documents\lahtachev\mp2-lab3-lists-stack\include\list.h(21) : see declaration of 'List<ValType>::erase'
+                 definition
+                 'void List::erase(ValType)'
+                 existing declarations
+                 'void List<ValType>::erase(ValType)'
+     1>c:\users\stud2014\documents\lahtachev\mp2-lab3-lists-stack\include\list.h(137): error C2244: 'List<ValType>::print' : unable to match function definition to an existing declaration
+                 c:\users\stud2014\documents\lahtachev\mp2-lab3-lists-stack\include\list.h(26) : see declaration of 'List<ValType>::print'
+                 definition
+                 'void List::print(void)'
+                 existing declarations
+                 'void List<ValType>::print(void)'
+     1>c:\users\stud2014\documents\lahtachev\mp2-lab3-lists-stack\include\list.h(142): error C2244: 'List<ValType>::getFirst' : unable to match function definition to an existing declaration
+                 c:\users\stud2014\documents\lahtachev\mp2-lab3-lists-stack\include\list.h(27) : see declaration of 'List<ValType>::getFirst'
+                 definition
+                 'NODE<ValType> *List::getFirst(void)'
+                 existing declarations
+                 'NODE<ValType> *List<ValType>::getFirst(void)'
+     1>c:\users\stud2014\documents\lahtachev\mp2-lab3-lists-stack\include\stack.h(23): error C2244: 'Stack<ValType>::{ctor}' : unable to match function definition to an existing declaration
+                 definition
+                 'Stack::Stack(void)'
+                 existing declarations
+                 'Stack<ValType>::Stack(const Stack<ValType> &)'
+                 'Stack<ValType>::Stack(void)'
+     1>c:\users\stud2014\documents\lahtachev\mp2-lab3-lists-stack\include\stack.h(29): error C2244: 'Stack<ValType>::isEmpty' : unable to match function definition to an existing declaration
+                 c:\users\stud2014\documents\lahtachev\mp2-lab3-lists-stack\include\stack.h(12) : see declaration of 'Stack<ValType>::isEmpty'
+                 definition
+                 'int Stack::isEmpty(void) const'
+                 existing declarations
+                 'int Stack<ValType>::isEmpty(void) const'
+     1>c:\users\stud2014\documents\lahtachev\mp2-lab3-lists-stack\include\stack.h(40): error C2244: 'Stack<ValType>::isFull' : unable to match function definition to an existing declaration
+                 c:\users\stud2014\documents\lahtachev\mp2-lab3-lists-stack\include\stack.h(13) : see declaration of 'Stack<ValType>::isFull'
+                 definition
+                 'int Stack::isFull(void) const'
+                 existing declarations
+                 'int Stack<ValType>::isFull(void) const'
+     1>c:\users\stud2014\documents\lahtachev\mp2-lab3-lists-stack\include\stack.h(46): error C2244: 'Stack<ValType>::push' : unable to match function definition to an existing declaration
+                 c:\users\stud2014\documents\lahtachev\mp2-lab3-lists-stack\include\stack.h(14) : see declaration of 'Stack<ValType>::push'
+                 definition
+                 'void Stack::push(ValType)'
+                 existing declarations
+                 'void Stack<ValType>::push(ValType)'
+     1>c:\users\stud2014\documents\lahtachev\mp2-lab3-lists-stack\include\stack.h(54): error C2244: 'Stack<ValType>::pop' : unable to match function definition to an existing declaration
+                 c:\users\stud2014\documents\lahtachev\mp2-lab3-lists-stack\include\stack.h(15) : see declaration of 'Stack<ValType>::pop'
+                 definition
+                 'ValType Stack::pop(void)'
+                 existing declarations
+                 'ValType Stack<ValType>::pop(void)'
+     1>c:\users\stud2014\documents\lahtachev\mp2-lab3-lists-stack\include\stack.h(60): error C2244: 'Stack<ValType>::printS' : unable to match function definition to an existing declaration
+                 c:\users\stud2014\documents\lahtachev\mp2-lab3-lists-stack\include\stack.h(16) : see declaration of 'Stack<ValType>::printS'
+                 definition
+                 'ValType Stack::printS(void)'
+                 existing declarations
+                 'ValType Stack<ValType>::printS(void)'
+     1>Done Building Project "C:\Users\stud2014\Documents\Lahtachev\mp2-lab3-lists-stack\sln\lab3_postfix\sample_List\sample_List.vcxproj" (build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.62

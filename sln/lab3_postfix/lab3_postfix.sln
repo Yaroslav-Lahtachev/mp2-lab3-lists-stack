@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gtest", "gtest\gtest.vcxproj", "{BCE391B0-D897-482D-9963-A1876DDDF82C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "postfix_lib", "postfix_lib\postfix_lib.vcxproj", "{AF8BCA86-782A-41D2-B619-123F2D07F592}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sample_List", "sample_List\sample_List.vcxproj", "{DD4C0508-A7C3-4BAD-BB61-4D7F58E0EC9A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BCE391B0-D897-482D-9963-A1876DDDF82C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BCE391B0-D897-482D-9963-A1876DDDF82C}.Debug|Win32.Build.0 = Debug|Win32
+		{BCE391B0-D897-482D-9963-A1876DDDF82C}.Release|Win32.ActiveCfg = Release|Win32
+		{BCE391B0-D897-482D-9963-A1876DDDF82C}.Release|Win32.Build.0 = Release|Win32
+		{AF8BCA86-782A-41D2-B619-123F2D07F592}.Debug|Win32.ActiveCfg = Debug|Win32
+		{AF8BCA86-782A-41D2-B619-123F2D07F592}.Debug|Win32.Build.0 = Debug|Win32
+		{AF8BCA86-782A-41D2-B619-123F2D07F592}.Release|Win32.ActiveCfg = Release|Win32
+		{AF8BCA86-782A-41D2-B619-123F2D07F592}.Release|Win32.Build.0 = Release|Win32
+		{DD4C0508-A7C3-4BAD-BB61-4D7F58E0EC9A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{DD4C0508-A7C3-4BAD-BB61-4D7F58E0EC9A}.Debug|Win32.Build.0 = Debug|Win32
+		{DD4C0508-A7C3-4BAD-BB61-4D7F58E0EC9A}.Release|Win32.ActiveCfg = Release|Win32
+		{DD4C0508-A7C3-4BAD-BB61-4D7F58E0EC9A}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
