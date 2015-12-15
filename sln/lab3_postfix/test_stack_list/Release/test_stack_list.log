@@ -1,0 +1,38 @@
+﻿Build started 15.12.2015 23:05:14.
+     1>Project "C:\Users\ZORG\Documents\GitHub\mp2-lab3-lists-stack\sln\lab3_postfix\test_stack_list\test_stack_list.vcxproj" on node 2 (rebuild target(s)).
+     1>_PrepareForClean:
+         Deleting file "Release\test_stack_list.lastbuildstate".
+       InitializeBuildStatus:
+         Touching "Release\test_stack_list.unsuccessfulbuild".
+       ClCompile:
+         D:\Program\vs10\VC\bin\CL.exe /c /I../../../include /I../../../gtest /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt test_list.cpp test_stack.cpp
+         test_list.cpp
+         test_stack.cpp
+       Link:
+         D:\Program\vs10\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\ZORG\Documents\GitHub\mp2-lab3-lists-stack\sln\lab3_postfix\Release\test_stack_list.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Release\test_stack_list.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\ZORG\Documents\GitHub\mp2-lab3-lists-stack\sln\lab3_postfix\Release\test_stack_list.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\ZORG\Documents\GitHub\mp2-lab3-lists-stack\sln\lab3_postfix\Release\test_stack_list.lib" /MACHINE:X86 Release\test_list.obj
+         Release\test_stack.obj
+     1>test_list.obj : error LNK2001: unresolved external symbol "public: class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > __thiscall testing::Message::GetString(void)const " (?GetString@Message@testing@@QBE?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ)
+     1>test_list.obj : error LNK2001: unresolved external symbol "public: __thiscall testing::Message::Message(void)" (??0Message@testing@@QAE@XZ)
+     1>test_list.obj : error LNK2001: unresolved external symbol "public: __thiscall testing::AssertionResult::AssertionResult(class testing::AssertionResult const &)" (??0AssertionResult@testing@@QAE@ABV01@@Z)
+     1>test_list.obj : error LNK2001: unresolved external symbol "protected: virtual void __thiscall testing::Test::TearDown(void)" (?TearDown@Test@testing@@MAEXXZ)
+     1>test_list.obj : error LNK2001: unresolved external symbol "protected: virtual void __thiscall testing::Test::SetUp(void)" (?SetUp@Test@testing@@MAEXXZ)
+     1>test_list.obj : error LNK2001: unresolved external symbol "protected: __thiscall testing::Test::Test(void)" (??0Test@testing@@IAE@XZ)
+     1>test_list.obj : error LNK2001: unresolved external symbol "public: virtual __thiscall testing::Test::~Test(void)" (??1Test@testing@@UAE@XZ)
+     1>test_list.obj : error LNK2001: unresolved external symbol "class testing::AssertionResult __cdecl testing::AssertionFailure(void)" (?AssertionFailure@testing@@YA?AVAssertionResult@1@XZ)
+     1>test_list.obj : error LNK2001: unresolved external symbol "public: void __thiscall testing::internal::AssertHelper::operator=(class testing::Message const &)const " (??4AssertHelper@internal@testing@@QBEXABVMessage@2@@Z)
+     1>test_list.obj : error LNK2001: unresolved external symbol "public: __thiscall testing::internal::AssertHelper::~AssertHelper(void)" (??1AssertHelper@internal@testing@@QAE@XZ)
+     1>test_list.obj : error LNK2001: unresolved external symbol "public: __thiscall testing::internal::AssertHelper::AssertHelper(enum testing::TestPartResult::Type,char const *,int,char const *)" (??0AssertHelper@internal@testing@@QAE@W4Type@TestPartResult@2@PBDH1@Z)
+     1>test_list.obj : error LNK2001: unresolved external symbol "bool __cdecl testing::internal::IsTrue(bool)" (?IsTrue@internal@testing@@YA_N_N@Z)
+     1>test_list.obj : error LNK2001: unresolved external symbol "void const * __cdecl testing::internal::GetTestTypeId(void)" (?GetTestTypeId@internal@testing@@YAPBXXZ)
+     1>test_list.obj : error LNK2001: unresolved external symbol "bool __cdecl testing::internal::AlwaysTrue(void)" (?AlwaysTrue@internal@testing@@YA_NXZ)
+     1>test_list.obj : error LNK2001: unresolved external symbol "class testing::AssertionResult __cdecl testing::internal::EqFailure(char const *,char const *,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,bool)" (?EqFailure@internal@testing@@YA?AVAssertionResult@2@PBD0ABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@1_N@Z)
+     1>test_list.obj : error LNK2001: unresolved external symbol "class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > __cdecl testing::internal::GetBoolAssertionFailureMessage(class testing::AssertionResult const &,char const *,char const *,char const *)" (?GetBoolAssertionFailureMessage@internal@testing@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@ABVAssertionResult@2@PBD11@Z)
+     1>test_list.obj : error LNK2001: unresolved external symbol "class testing::TestInfo * __cdecl testing::internal::MakeAndRegisterTestInfo(char const *,char const *,char const *,char const *,void const *,void (__cdecl*)(void),void (__cdecl*)(void),class testing::internal::TestFactoryBase *)" (?MakeAndRegisterTestInfo@internal@testing@@YAPAVTestInfo@2@PBD000PBXP6AXXZ2PAVTestFactoryBase@12@@Z)
+     1>test_list.obj : error LNK2001: unresolved external symbol "class testing::AssertionResult __cdecl testing::AssertionSuccess(void)" (?AssertionSuccess@testing@@YA?AVAssertionResult@1@XZ)
+     1>MSVCRT.lib(crtexe.obj) : error LNK2001: unresolved external symbol _main
+     1>C:\Users\ZORG\Documents\GitHub\mp2-lab3-lists-stack\sln\lab3_postfix\Release\test_stack_list.exe : fatal error LNK1120: 19 unresolved externals
+     1>Done Building Project "C:\Users\ZORG\Documents\GitHub\mp2-lab3-lists-stack\sln\lab3_postfix\test_stack_list\test_stack_list.vcxproj" (rebuild target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:01.23

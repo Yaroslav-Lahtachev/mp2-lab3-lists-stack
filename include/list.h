@@ -15,9 +15,9 @@ private:
 	NODE<ValType>* pFirst;
 public:
 	List();
-	// List(const List &list); 
+	List(const List &list); 
 	NODE<ValType>* find(ValType key);
-	NODE<ValType>* findP(ValType key);
+	NODE<ValType>* findP(ValType key, NODE<ValType> *&elem);
 	void erase(ValType key);
 	void insertF(ValType key);
 	void insertL(ValType key);
@@ -31,36 +31,51 @@ public:
 
 
 template <class ValType>
-List::List()
+List<ValType>::List()
 {
 	pFirst = 0;
 }
-//List::List(const List &list){}
+template <class ValType>
+List<ValType>::List(const List<ValType> &list)
+{
+	pFirst = 0;
+	NODE<ValType> *tmp=list.pFirst;
+	while(tmp!=0)
+	{
+		insertL(tmp->key);
+		tmp=tmp->pNext;
+	}
+}
 
 template <class ValType>
-NODE<ValType>* List::find(ValType key)
+NODE<ValType> *List<ValType>::find(ValType key)
 {
 	if (pFirst==0)
-		return 0;
+		throw "EMPTY_LIST";
 	NODE<ValType> *tmp=pFirst;
 	while((tmp->pNext!=0)&&(tmp->key!=key))
 		tmp=tmp->pNext;
 	if (tmp->key!=key) 
-		return 0;
+		throw "ELEM_NOT_FOUND";
 	return (tmp);
 }
 template <class ValType>
-NODE<ValType>* List::findP(ValType key)
+NODE<ValType>* List<ValType>::findP(ValType key, NODE<ValType> *&elem)
 {	
 	if (pFirst==0)
-		return 0;
+		throw "EMPTY_LIST";
 	NODE<ValType> *tmp=pFirst;
-	if (tmp->key==key)
-		return tmp;
-	while((tmp->pNext->pNext!=0)&&(tmp->pNext->key!=key))
-		tmp=tmp->pNext;
-	if (tmp->pNext->key!=key) 
+	elem=pFirst;
+	while((elem->pNext!=0)&&(elem->key!=key))
+	{
+		elem=elem->pNext;
+		tmp=elem;
+	}
+	if ((elem->key!=key)||(elem==0))
+	{
+		elem=0;
 		return 0;
+	}
 	return (tmp);
 }
 template <class ValType>
@@ -75,6 +90,11 @@ template <class ValType>
 void List<ValType>::insertL(ValType key)
 {
 	NODE<ValType> *tmp=pFirst;
+	if(tmp==0)
+	{
+		insertF(key);
+		return;
+	}
 	while(tmp->pNext!=0)
 		tmp=tmp->pNext;
 	tmp->pNext=new NODE<ValType>;
@@ -85,43 +105,47 @@ void List<ValType>::insertL(ValType key)
 template <class ValType>
 void List<ValType>::insertB(ValType key, NODE<ValType> *elem)
 {	
-	NODE<ValType> *point=findP(key);
-	if ((point==0)&&(pFirst->key!=key)) 
-		return;
-	elem->pNext=point->pNext->pNext;
-	if (point==0)	
+	if (pFirst==0) throw "EMPTY_LIST";
+	NODE<ValType> *p;
+	NODE<ValType> *tmp=findP(key,p);
+	if ((tmp==0)&&(pFirst->key!=key)) 
+		throw "KEY_NOT_FOUND";
+	elem->pNext=p;
+	if (tmp==0)	
 	{
 		pFirst=elem;
 		return;
 	}
-	point->pNext=elem;
+	tmp->pNext=elem;
 }
 template <class ValType>
 void List<ValType>::insertA(ValType key, NODE<ValType> *elem)
 {
+	if (pFirst==0) throw "EMPTY_LIST";
 	NODE<ValType> *point=find(key);
 	if (point==0)
-		return;
+		throw "KEY_NOT_FOUND";
 	elem->pNext=point->pNext;
 	point->pNext=elem;
 }
 template <class ValType>
 void List<ValType>::erase(ValType key)
 {
-	NODE<ValType> *tmp =findP(key);
-	if(tmp==pFirst)
+	if (pFirst==0) throw "EMPTY_LIST";
+	NODE<ValType> *elem;
+	NODE<ValType> *tmp =findP(key,elem);
+	if ((tmp==0)&&(pFirst->key!=key)) 
+		throw "ELEM_NOT_FOUND";
+	if(tmp==0)
 	{
-		pFirst->pNext=pFirst->pNext->pNext;
-		delete tmp->pNext;
+		pFirst=pFirst->pNext;
+		delete elem;
+		return;
 	}
-	else if(tmp->pNext->pNext==0)
-		tmp->pNext=0;
-	else 
-		{
-			NODE<ValType> *tmp1=tmp->pNext;
-			tmp->pNext=tmp->pNext->pNext;
-			delete tmp1;
-		}
+	
+		tmp->pNext=elem->pNext;
+		delete elem;
+		return;
 }
 template <class ValType>
 void List<ValType>::print()
@@ -131,12 +155,12 @@ void List<ValType>::print()
 		return;
 	while(tmp!=0)	
 	{
-		cout<<tmp->key<<endl;
+		std::cout<<tmp->key<<std::endl;
 		tmp=tmp->pNext;
 	}
 }
 template <class ValType>
-NODE<ValType>* List::getFirst()
+NODE<ValType>* List<ValType>::getFirst()
 {
 	return pFirst;
 }

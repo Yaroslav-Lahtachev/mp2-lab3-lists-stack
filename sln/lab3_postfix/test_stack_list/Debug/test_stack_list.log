@@ -1,0 +1,23 @@
+﻿Build started 15.12.2015 23:01:33.
+     1>Project "C:\Users\ZORG\Documents\GitHub\mp2-lab3-lists-stack\sln\lab3_postfix\test_stack_list\test_stack_list.vcxproj" on node 2 (rebuild target(s)).
+     1>_PrepareForClean:
+         Deleting file "Debug\test_stack_list.lastbuildstate".
+       InitializeBuildStatus:
+         Touching "Debug\test_stack_list.unsuccessfulbuild".
+       ClCompile:
+         D:\Program\vs10\VC\bin\CL.exe /c /I../../../include /I../../../gtest /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt test_list.cpp test_stack.cpp
+         test_stack.cpp
+         test_list.cpp
+         Generating Code...
+       ManifestResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\test_stack_list.exe.embed.manifest.res" Debug\test_stack_list_manifest.rc 
+       Link:
+         D:\Program\vs10\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\ZORG\Documents\GitHub\mp2-lab3-lists-stack\sln\lab3_postfix\Debug\test_stack_list.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\test_stack_list.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\ZORG\Documents\GitHub\mp2-lab3-lists-stack\sln\lab3_postfix\Debug\test_stack_list.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\ZORG\Documents\GitHub\mp2-lab3-lists-stack\sln\lab3_postfix\Debug\test_stack_list.lib" /MACHINE:X86 Debug\test_stack_list.exe.embed.manifest.res
+         Debug\test_list.obj
+         Debug\test_stack.obj
+     1>LINK : fatal error LNK1123: failure during conversion to COFF: file invalid or corrupt
+     1>Done Building Project "C:\Users\ZORG\Documents\GitHub\mp2-lab3-lists-stack\sln\lab3_postfix\test_stack_list\test_stack_list.vcxproj" (rebuild target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:01.45
