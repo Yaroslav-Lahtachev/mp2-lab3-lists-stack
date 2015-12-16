@@ -1,6 +1,6 @@
 #pragma once
-#include <iostream>
 
+#include <iostream>
 
 template <class ValType>
 class NODE
@@ -64,7 +64,7 @@ NODE<ValType>* List<ValType>::findP(ValType key, NODE<ValType> *&elem)
 {	
 	if (pFirst==0)
 		throw "EMPTY_LIST";
-	NODE<ValType> *tmp=pFirst;
+	NODE<ValType> *tmp=0;
 	elem=pFirst;
 	while((elem->pNext!=0)&&(elem->key!=key))
 	{
