@@ -33,12 +33,46 @@ TEST(List, can_search_element)
 	list.insertL(1);
 	ASSERT_TRUE(list.find(1)!=0);
 }
-TEST(List, can_not_search_element) 
+TEST(List, can_not_search_in_empty_list)
+{
+	List<int> list;
+	ASSERT_ANY_THROW(list.find(1));
+}
+
+TEST(List, if_elem_not_found_null) 
 {
 	List<int> list;
 	list.insertL(1);
-	ASSERT_ANY_THROW(list.find(2));
+	list.insertL(2);
+	list.insertL(3);
+	ASSERT_TRUE(list.find(4)==0);
 }
+TEST(List, can_find_prev_elem) 
+{
+	List<int> list;
+	list.insertL(1);
+	list.insertL(2);
+	list.insertL(3);
+	NODE<int> *elem = new NODE<int>;
+	ASSERT_TRUE(list.findP(3,elem)!=0);
+}
+TEST(List, throw_findP_in_empty_list) 
+{
+	List<int> list;
+	NODE<int> *elem = new NODE<int>;
+	ASSERT_ANY_THROW(list.findP(4,elem));
+}
+TEST(List, throw_if_prev_elem_not_found) 
+{
+	List<int> list;
+	list.insertL(1);
+	list.insertL(2);
+	list.insertL(3);
+	NODE<int> *elem = new NODE<int>;
+	ASSERT_ANY_THROW(list.findP(4,elem));
+}
+
+
 TEST(List, erase_from_empty_list) 
 {
 	List<int> list;
@@ -51,7 +85,7 @@ TEST(List, can_erase_element)
 	list.insertL(2);
 	ASSERT_NO_THROW(list.erase(2));
 }
-TEST(List, can_not_erase_elem) 
+TEST(List, can_not_erase_elem_if_it_not_found) 
 {
 	List<int> list;
 	list.insertL(1);
@@ -120,20 +154,19 @@ TEST(List, can_insert_before_when_it_first)
 TEST(List, can_not_insert_after_when_key_not_found) 
 {
 	List<int> list;
+	list.insertL(5);
+	list.insertL(7);
+	list.insertL(9);
 	NODE<int> *elem = new NODE<int>;
-	list.insertL(1);
-	list.insertL(2);
-	elem->key=3;
-	ASSERT_ANY_THROW(list.insertA(4, elem));
+	elem->key = 1;
+	ASSERT_ANY_THROW(list.insertA(8, elem));
 }
 TEST(List, can_not_insert_before_when_key_not_found) 
 {
 	List<int> list;
 	NODE<int> *elem = new NODE<int>;
-	list.insertL(1);
-	list.insertL(2);
-	elem->key=3;
-	ASSERT_ANY_THROW(list.insertB(4, elem));
+	elem->key = 1;
+	ASSERT_ANY_THROW(list.insertB(5, elem));
 }
 
 TEST(List, can_not_insert_before_when_list_empty) 
@@ -176,4 +209,45 @@ TEST(List, can_get_first_key)
 	list.insertL(1);
 	list.insertL(2);
 	EXPECT_EQ(1, list.getFirst()->key);
+}
+TEST(List, elem_real_added_first)
+{
+	List<int> list;
+	list.insertL(1);
+	list.insertF(2);
+	EXPECT_EQ(2, list.getFirst()->key);
+}
+TEST(List, elem_real_added_last)
+{
+	List<int> list;
+	list.insertL(2);
+	EXPECT_EQ(2, list.getFirst()->key);
+}
+TEST(List, elem_real_added_before)
+{
+	List<int> list;
+	list.insertL(1);
+	list.insertL(2);
+	NODE<int> *elem = new NODE<int>;
+	elem->key=3;
+	list.insertB(2,elem);
+	EXPECT_EQ(2, list.find(3)->pNext->key);
+}
+TEST(List, elem_real_added_after)
+{
+	List<int> list;
+	list.insertL(1);
+	list.insertL(2);
+	NODE<int> *elem = new NODE<int>;
+	elem->key=3;
+	list.insertA(1,elem);
+	EXPECT_EQ(2, list.find(3)->pNext->key);
+}
+TEST(List, elem_real_deleted)
+{
+	List<int> list;
+	list.insertL(1);
+	list.insertL(2);
+	list.erase(2);
+	ASSERT_TRUE(list.find(2)==0);
 }

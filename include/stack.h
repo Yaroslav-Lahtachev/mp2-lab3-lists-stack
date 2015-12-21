@@ -9,18 +9,24 @@ private:
  	List<ValType> *nList;
 public:
  	Stack();
+	~Stack();
  	Stack(const Stack<ValType> &s);
  	int isEmpty() const;
  	int isFull() const;
  	void push(ValType key);
  	ValType pop();
-	ValType printS();
+	ValType top();
 }; 
 
 template <class ValType>
 Stack<ValType>::Stack()
 {
 	nList = new List<ValType>();
+}
+template <class ValType>
+Stack<ValType>::~Stack()
+{
+	delete this->nList;
 }
 template <class ValType>
 Stack<ValType>::Stack(const Stack<ValType> &s)
@@ -64,7 +70,7 @@ ValType Stack<ValType>::pop()
 	return res;
 }
 template <class ValType>
-ValType Stack<ValType>::printS()
+ValType Stack<ValType>::top()
 {
 	if(isEmpty()) 
 		throw "EMPTY_STACK";

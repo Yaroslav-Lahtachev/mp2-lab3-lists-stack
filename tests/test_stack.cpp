@@ -18,7 +18,7 @@ TEST(Stack, copied_stack_is_equal_to_sourse_one)
 	Stack<int> s1;
 	s1.push(3);
 	Stack<int> s2(s1);
-	EXPECT_EQ(s1.printS(), s2.printS());
+	EXPECT_EQ(s1.top(), s2.top());
 }
 TEST(Stack, copied_stack_has_its_own_memory)
 {
@@ -27,7 +27,7 @@ TEST(Stack, copied_stack_has_its_own_memory)
 	Stack<int> stack1(stack);
 	stack1.pop();
 	stack1.push(2);
-	EXPECT_NE(stack.printS(), stack1.printS());
+	EXPECT_NE(stack.top(), stack1.top());
 }
 TEST(Stack, can_pop)
 {
@@ -66,11 +66,22 @@ TEST(Stack, can_push_elem)
 TEST(Stack, can_not_print_elem_form_empty_stack)
 {
 	Stack<int> stack;
-	ASSERT_ANY_THROW(stack.printS());
+	ASSERT_ANY_THROW(stack.top());
 }
 TEST(Stack, can_print_elem)
 {
 	Stack<int> stack;
 	stack.push(1);
-	ASSERT_NO_THROW(stack.printS());
+	ASSERT_NO_THROW(stack.top());
+}
+TEST(Stack, can_not_pop_in_empty_stack)
+{
+	Stack<int> stack;
+	ASSERT_ANY_THROW(stack.pop());
+}
+TEST(Stack, fine_push)
+{
+	Stack<int> stack;
+	stack.push(1);
+	EXPECT_EQ(1,stack.top());
 }

@@ -6,6 +6,19 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "postfix_lib", "postfix_lib\postfix_lib.vcxproj", "{AF8BCA86-782A-41D2-B619-123F2D07F592}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sample_List", "sample_List\sample_List.vcxproj", "{DD4C0508-A7C3-4BAD-BB61-4D7F58E0EC9A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{AF8BCA86-782A-41D2-B619-123F2D07F592} = {AF8BCA86-782A-41D2-B619-123F2D07F592}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tests", "tests\tests.vcxproj", "{21A59F23-2E3B-4154-8E8B-BA87720D5C74}"
+	ProjectSection(ProjectDependencies) = postProject
+		{AF8BCA86-782A-41D2-B619-123F2D07F592} = {AF8BCA86-782A-41D2-B619-123F2D07F592}
+		{BCE391B0-D897-482D-9963-A1876DDDF82C} = {BCE391B0-D897-482D-9963-A1876DDDF82C}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sample_stack", "sample_stack\sample_stack.vcxproj", "{12F1B505-52FC-4A96-AB91-A45D74EE7158}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sample_main", "sample_main\sample_main.vcxproj", "{71924717-E1C3-43AA-AFD2-987B6BA27FDB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,6 +38,18 @@ Global
 		{DD4C0508-A7C3-4BAD-BB61-4D7F58E0EC9A}.Debug|Win32.Build.0 = Debug|Win32
 		{DD4C0508-A7C3-4BAD-BB61-4D7F58E0EC9A}.Release|Win32.ActiveCfg = Release|Win32
 		{DD4C0508-A7C3-4BAD-BB61-4D7F58E0EC9A}.Release|Win32.Build.0 = Release|Win32
+		{21A59F23-2E3B-4154-8E8B-BA87720D5C74}.Debug|Win32.ActiveCfg = Debug|Win32
+		{21A59F23-2E3B-4154-8E8B-BA87720D5C74}.Debug|Win32.Build.0 = Debug|Win32
+		{21A59F23-2E3B-4154-8E8B-BA87720D5C74}.Release|Win32.ActiveCfg = Release|Win32
+		{21A59F23-2E3B-4154-8E8B-BA87720D5C74}.Release|Win32.Build.0 = Release|Win32
+		{12F1B505-52FC-4A96-AB91-A45D74EE7158}.Debug|Win32.ActiveCfg = Debug|Win32
+		{12F1B505-52FC-4A96-AB91-A45D74EE7158}.Debug|Win32.Build.0 = Debug|Win32
+		{12F1B505-52FC-4A96-AB91-A45D74EE7158}.Release|Win32.ActiveCfg = Release|Win32
+		{12F1B505-52FC-4A96-AB91-A45D74EE7158}.Release|Win32.Build.0 = Release|Win32
+		{71924717-E1C3-43AA-AFD2-987B6BA27FDB}.Debug|Win32.ActiveCfg = Debug|Win32
+		{71924717-E1C3-43AA-AFD2-987B6BA27FDB}.Debug|Win32.Build.0 = Debug|Win32
+		{71924717-E1C3-43AA-AFD2-987B6BA27FDB}.Release|Win32.ActiveCfg = Release|Win32
+		{71924717-E1C3-43AA-AFD2-987B6BA27FDB}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

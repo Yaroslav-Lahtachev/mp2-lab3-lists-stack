@@ -1,0 +1,30 @@
+﻿Build started 21.12.2015 20:27:22.
+     1>Project "C:\Users\ZORG\Documents\GitHub\mp2-lab3-lists-stack\sln\lab3_postfix\tests\tests.vcxproj" on node 3 (rebuild target(s)).
+     1>_PrepareForClean:
+         Deleting file "Release\tests.lastbuildstate".
+       InitializeBuildStatus:
+         Creating "Release\tests.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         D:\Program\vs10\VC\bin\CL.exe /c /I../../../include /I../../../gtest /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\..\tests\test_list.cpp ..\..\..\tests\test_main.cpp ..\..\..\tests\test_stack.cpp
+         test_list.cpp
+         test_main.cpp
+         test_stack.cpp
+       Link:
+         D:\Program\vs10\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\ZORG\Documents\GitHub\mp2-lab3-lists-stack\sln\lab3_postfix\Release\tests.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:../Release kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Release\tests.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\ZORG\Documents\GitHub\mp2-lab3-lists-stack\sln\lab3_postfix\Release\tests.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\ZORG\Documents\GitHub\mp2-lab3-lists-stack\sln\lab3_postfix\Release\tests.lib" /MACHINE:X86 Release\test_list.obj
+         Release\test_main.obj
+         Release\test_stack.obj
+         "C:\Users\ZORG\Documents\GitHub\mp2-lab3-lists-stack\sln\lab3_postfix\Release\gtest.lib"
+         "C:\Users\ZORG\Documents\GitHub\mp2-lab3-lists-stack\sln\lab3_postfix\Release\postfix_lib.lib"
+         Generating code
+         Finished generating code
+         tests.vcxproj -> C:\Users\ZORG\Documents\GitHub\mp2-lab3-lists-stack\sln\lab3_postfix\Release\tests.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\ZORG\Documents\GitHub\mp2-lab3-lists-stack\sln\lab3_postfix\Release\tests.exe;#1" /manifest Release\tests.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "Release\tests.unsuccessfulbuild".
+         Touching "Release\tests.lastbuildstate".
+     1>Done Building Project "C:\Users\ZORG\Documents\GitHub\mp2-lab3-lists-stack\sln\lab3_postfix\tests\tests.vcxproj" (rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.14

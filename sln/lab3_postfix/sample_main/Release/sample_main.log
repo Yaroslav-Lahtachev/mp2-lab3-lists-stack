@@ -1,0 +1,26 @@
+﻿Build started 21.12.2015 20:27:20.
+     1>Project "C:\Users\ZORG\Documents\GitHub\mp2-lab3-lists-stack\sln\lab3_postfix\sample_main\sample_main.vcxproj" on node 4 (rebuild target(s)).
+     1>_PrepareForClean:
+         Deleting file "Release\sample_main.lastbuildstate".
+       InitializeBuildStatus:
+         Creating "Release\sample_main.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         D:\Program\vs10\VC\bin\CL.exe /c /I../../../include /I../../../src /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\..\samples\sample.cpp
+         sample.cpp
+     1>..\..\..\samples\sample.cpp(19): warning C4018: '<' : signed/unsigned mismatch
+     1>..\..\..\samples\sample.cpp(66): warning C4018: '<' : signed/unsigned mismatch
+       Link:
+         D:\Program\vs10\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\ZORG\Documents\GitHub\mp2-lab3-lists-stack\sln\lab3_postfix\Release\sample_main.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:../Release postfix_lib.lib /MANIFEST /ManifestFile:"Release\sample_main.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\ZORG\Documents\GitHub\mp2-lab3-lists-stack\sln\lab3_postfix\Release\sample_main.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\ZORG\Documents\GitHub\mp2-lab3-lists-stack\sln\lab3_postfix\Release\sample_main.lib" /MACHINE:X86 Release\sample.obj
+         Generating code
+         Finished generating code
+         sample_main.vcxproj -> C:\Users\ZORG\Documents\GitHub\mp2-lab3-lists-stack\sln\lab3_postfix\Release\sample_main.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\ZORG\Documents\GitHub\mp2-lab3-lists-stack\sln\lab3_postfix\Release\sample_main.exe;#1" /manifest Release\sample_main.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "Release\sample_main.unsuccessfulbuild".
+         Touching "Release\sample_main.lastbuildstate".
+     1>Done Building Project "C:\Users\ZORG\Documents\GitHub\mp2-lab3-lists-stack\sln\lab3_postfix\sample_main\sample_main.vcxproj" (rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.89
