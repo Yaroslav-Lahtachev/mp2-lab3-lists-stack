@@ -3,7 +3,7 @@
 ## Содержание
 
 1. [Введение](https://github.com/Yaroslav-Lahtachev/mp2-lab3-lists-stack#Введение)
-2. [Постановка задачи](https://github.com/Yaroslav-Lahtachev/mp2-lab3-lists-stack#Постановка-задачи)(
+2. [Постановка задачи](https://github.com/Yaroslav-Lahtachev/mp2-lab3-lists-stack#Постановка-задачи)
 3. [Руководство пользователя](https://github.com/Yaroslav-Lahtachev/mp2-lab3-lists-stack#Руководство-пользователя)
    1. [Запуск приложения](https://github.com/Yaroslav-Lahtachev/mp2-lab3-lists-stack#Запуск-приложения)
 4. [Руководство программиста](https://github.com/Yaroslav-Lahtachev/mp2-lab3-lists-stack#Руководство-программиста)
