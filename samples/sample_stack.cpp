@@ -25,10 +25,12 @@ int main()
 	cout<<"копирование стека"<<endl;
 	Stack<int> stack1(stack);
 		
-	cout<<"добавление нового елемента в копию"<<endl;
+	cout<<"добавление нового элемента в копию"<<endl;
 	cin>>n;
 	stack1.push(n);
-	
+	cout<<"удаление элемента из копии"<<endl;
+	stack1.pop();
+
 	cout<<"сравнение измененной копии стека с исходным"<<endl;
 	cout<<"измененная копия: ";
 	while(stack1.isEmpty()==0)
