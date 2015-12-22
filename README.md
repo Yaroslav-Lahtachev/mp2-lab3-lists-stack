@@ -2,17 +2,17 @@
 
 ## Содержание
 
-1. Введение
-2. Постановка задачи
-3. Руководство пользователя
-   1. Запуск приложения
-4. Руководство программиста
-   1. Используемые инструменты
-   1. Общая структура проекта
-   1. Описание структуры проекта
-   1. Описание структур данных
-   1. Описание алгоритмов
-5. Заключение
+1. [Введение](https://github.com/Yaroslav-Lahtachev/mp2-lab3-lists-stack#Введение)
+2. [Постановка задачи](https://github.com/Yaroslav-Lahtachev/mp2-lab3-lists-stack#Постановка-задачи)(
+3. [Руководство пользователя](https://github.com/Yaroslav-Lahtachev/mp2-lab3-lists-stack#Руководство-пользователя)
+   1. [Запуск приложения](https://github.com/Yaroslav-Lahtachev/mp2-lab3-lists-stack#Запуск-приложения)
+4. [Руководство программиста](https://github.com/Yaroslav-Lahtachev/mp2-lab3-lists-stack#Руководство-программиста)
+   1. [Используемые инструменты](https://github.com/Yaroslav-Lahtachev/mp2-lab3-lists-stack#Используемые-инструменты)
+   1. [Общая структура проекта](https://github.com/Yaroslav-Lahtachev/mp2-lab3-lists-stack#Общая-структура-проекта)
+   1. [Описание структуры проекта](https://github.com/Yaroslav-Lahtachev/mp2-lab3-lists-stack#Описание-структуры-проекта)
+   1. [Описание структур данных](https://github.com/Yaroslav-Lahtachev/mp2-lab3-lists-stack#Описание-структур-данных)
+   1. [Описание алгоритмов](https://github.com/Yaroslav-Lahtachev/mp2-lab3-lists-stack#Описание-алгоритмов)
+5. [Заключение](https://github.com/Yaroslav-Lahtachev/mp2-lab3-lists-stack#Заключение)
 
 ## Введение
 
